@@ -25,12 +25,51 @@
 </head>
 
 <body id="avaliable">
-    <!-- Header Link -->
-    <?php include 'header.php'; ?>
+
+    <!-- Header Start -->
+    <header>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- <a href="#" class="navbar-brand"><img src="image/logo.png" alt=""></a> -->
+                    <a class="navbar-brand" rel="home" href="index.html" title="Buy Sell Rent Everyting">
+                        <img style="max-width:259px; margin-top: -15px;" src="image/logo.png">
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about-us.html">About Us</a>
+                        </li>
+                        <li>
+                            <a href="avaliable-cars.html">Avaliable Cars</a>
+                        </li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right ">
+                        <li>
+                            <a href="login.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Header End -->
 
     <section>
         <div class="container">
-            <h2 style="font-weight: 800; text-shadow: 1px 1px 3px aqua, 1px 1px 3px black, 1px 1px 4px white; " class="text-center"><span>Available Cars to Rent</span></h2>
+            <h2 style="font-weight: 800; text-shadow: 1px 1px 3px aqua, 1px 1px 3px black, 1px 1px 4px white; "
+                class="text-center"><span>Available Cars to Rent</span></h2>
             <h3 style="font-weight:bold; visibility: hidden;">Available Cars</h3>
             <br>
             <table class="table">
@@ -128,10 +167,13 @@
     </section>
 
 
-
-
-    <!-- Footer Link -->
-    <?php include 'footer.php'; ?>
+    <!-- Footer Start -->
+    <footer>
+        <div class="footer">
+            <p>&copy; 2024 Car Rental Agency. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Footer End -->
 
     <script src="script.js"></script>
 </body>

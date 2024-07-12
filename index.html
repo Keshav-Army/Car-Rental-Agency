@@ -32,8 +32,47 @@
 </head>
 
 <body>
-  <!-- Header Link -->
-  <?php include 'header.php'; ?>
+
+  <!-- Header Start -->
+  <header>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- <a href="#" class="navbar-brand"><img src="image/logo.png" alt=""></a> -->
+          <a class="navbar-brand" rel="home" href="index.html" title="Buy Sell Rent Everyting">
+            <img style="max-width:259px; margin-top: -15px;" src="image/logo.png">
+          </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="about-us.html">About Us</a>
+            </li>
+            <li>
+              <a href="avaliable-cars.html">Avaliable Cars</a>
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right ">
+            <li>
+              <a href="login.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Header End -->
+
 
   <div class="carousel slide myslider" data-ride="carousel" id="myCarousel" data-interval="2000" data-pause="hover">
     <!-- Wallpaper for Slide -->
@@ -88,7 +127,7 @@
       <p class="text-left text-justify">At Car Rental Hub, we strive to make your car rental experience seamless and
         convenient. Whether you're a customer looking for the perfect ride or a car rental agency wanting to expand your
         reach, our platform caters to all your needs.</p>
-      <!-- <a href="about-us.php">Read More</a> -->
+      <!-- <a href="about-us.html">Read More</a> -->
     </div>
 
 
@@ -109,7 +148,7 @@
             for
             business or pleasure, we strive to meet and exceed your expectations every step of the way.</p>
           <br>
-          <a href="about-us.php">More About Us</a>
+          <a href="about-us.html">More About Us</a>
         </div>
       </div>
     </div>
@@ -260,8 +299,14 @@
     </div>
   </section>
 
-  <!-- Footer Link -->
-  <?php include 'footer.php'; ?>
+  <!-- Footer Start -->
+  <footer>
+    <div class="footer">
+      <p>&copy; 2024 Car Rental Agency. All rights reserved.</p>
+    </div>
+  </footer>
+  <!-- Footer End -->
+
 
   <script src="script.js"></script>
 </body>
