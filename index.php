@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Rental Agency</title>
+  <!-- ============================================Bootstrap Link============================================ -->
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- ============================================Bootstrap Link END============================================ -->
+
+  <!-- ============================================Fa-Fa icon Link============================================ -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- ============================================External CSS Link============================================ -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Internal CSS -->
+  <style>
+    .table>tbody>tr>td {
+      text-align: center !important;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header Link -->
+  <?php include 'header.php'; ?>
+
+  <div class="carousel slide myslider" data-ride="carousel" id="myCarousel" data-interval="2000" data-pause="hover">
+    <!-- Wallpaper for Slide -->
+    <div class="carousel-inner">
+
+      <div class="item active mysliderimage">
+        <img src="image/nexon-dark-banner-march-2024.jpg" alt="car-image">
+        <div class="carousel-caption">
+          <h3>Toyota Camry</h3>
+          <p>ABC123</p>
+        </div>
+      </div>
+
+      <div class="item mysliderimage">
+        <img src="image/Mustang-rd.jpg" alt="car-image">
+        <div class="carousel-caption">
+          <h3>Ford Mustang</h3>
+          <p>XYZ789</p>
+        </div>
+      </div>
+
+      <div class="item mysliderimage">
+        <img src="image/supra.jpg" alt="car-image">
+        <div class="carousel-caption">
+          <h3>Toyota Supra</h3>
+          <p>MVP789</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <section>
+    <div class="container one">
+      <h2 class="text-left" style="margin: -20px 0px 30px 0px;">Welcome to Car Rental Hub</h2>
+      <p class="text-left text-justify">At Car Rental Hub, we strive to make your car rental experience seamless and
+        convenient. Whether you're a customer looking for the perfect ride or a car rental agency wanting to expand your
+        reach, our platform caters to all your needs.</p>
+      <!-- <a href="about-us.php">Read More</a> -->
+    </div>
+
+
+    <div class="container-fluid two">
+      <div class="container">
+        <br><br><br>
+        <div class="container one button-text">
+          <h2 class="text-left" style="margin: -20px 0px 30px 0px;">About Us</h2>
+          <p class="text-left text-justify">Welcome to <b>Car Rental Agency</b>, your premier destination for
+            hassle-free car rental
+            services.
+            Established with a vision to redefine the standards of car rental experiences, we pride ourselves on
+            offering
+            top-notch vehicles coupled with unparalleled customer service.</p>
+          <p class="text-left text-justify">At Car Rental Agency, we understand that renting a car is not just
+            about
+            transportation; it's about making your journey smooth, comfortable, and memorable. Whether you're traveling
+            for
+            business or pleasure, we strive to meet and exceed your expectations every step of the way.</p>
+          <br>
+          <a href="about-us.php">More About Us</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>Available Cars to Rent</h2>
+      <h3>Available Cars</h3>
+      <div class="table-responsive">
+        <table class="table table-hover">
+          <tr>
+            <th>Vehicle Modal</th>
+            <th>Vehicle Number</th>
+            <th>Seating Capacity</th>
+            <th>Rent par Day</th>
+            <th>Action</th>
+          </tr>
+
+          <tr>
+            <td>Toyota Camry</td>
+            <td>ABC123</td>
+            <td>5</td>
+            <td>50</td>
+            <td><button type="button" class="btn btn-primary" onclick="function_name(' Toyota Camry');">Rent
+                Car</button></td>
+          </tr>
+
+          <tr>
+            <td>Ford Mustang</td>
+            <td>XYZ789</td>
+            <td>4</td>
+            <td>30</td>
+            <td><button type="button" class="btn btn-primary" onclick="function_name(' Ford Mustang');">Rent
+                Car</button></td>
+          </tr>
+
+          <tr>
+            <td>Toyota Supra</td>
+            <td>MVP789</td>
+            <td>2</td>
+            <td>40</td>
+            <td><button type="button" class="btn btn-primary" onclick="function_name(' Toyota Supra');">Rent
+                Car</button></td>
+          </tr>
+
+          <tr>
+            <td>BMW X5</td>
+            <td>GHI012</td>
+            <td>5</td>
+            <td>80</td>
+            <td><button type="button" class="btn btn-primary" onclick="function_name(' BMW X5');">Rent
+                Car</button></td>
+          </tr>
+
+          <tr>
+            <td>Subaru Outback</td>
+            <td>EFG456</td>
+            <td>5</td>
+            <td>$58</td>
+            <td><button type="button" class="btn btn-primary" onclick="function_name(' Subaru Outback');">Rent
+                Car</button></td>
+          </tr>
+
+          <tr>
+            <td>Nissan Altima</td>
+            <td>BCD123</td>
+            <td>5</td>
+            <td>$48</td>
+            <td><button type="button" class="btn btn-primary" onclick="function_name(' Nissan Altima');">Rent
+                Car</button></td>
+          </tr>
+
+          <tr>
+            <td>Kia Optima</td>
+            <td>YZA890</td>
+            <td>5</td>
+            <td>$52</td>
+            <td><button type="button" class="btn btn-primary" onclick="function_name(' Kia Optima');">Rent
+                Car</button></td>
+          </tr>
+
+          <tr>
+            <td>Hyundai Sonata</td>
+            <td>VWX567</td>
+            <td>5</td>
+            <td>$55</td>
+            <td><button type="button" class="btn btn-primary" onclick="function_name(' Hyundai Sonata');">Rent
+                Car</button></td>
+          </tr>
+
+          <tr>
+            <td>Volvo XC90</td>
+            <td>STU234</td>
+            <td>7</td>
+            <td>$85</td>
+            <td><button type="button" class="btn btn-primary" onclick="function_name(' Volvo XC90');">Rent
+                Car</button></td>
+          </tr>
+
+        </table>
+      </div>
+    </div>
+
+
+
+
+    <div class="container three">
+      <h2>Explore Our Services</h2>
+      <ul class="about-us">
+        <li><i class="fa fa-chevron-right" aria-hidden="true"></i> <b>Available Cars:</b> Discover the wide array of
+          cars available for rent, complete with detailed information about each vehicle's model, seating capacity, and
+          daily rental rates.</li>
+        <li><i class="fa fa-chevron-right" aria-hidden="true"></i> <b>Convenient Booking:</b> Book your desired car
+          effortlessly and conveniently, whether you're planning a weekend getaway or a long-term rental.</li>
+        <li><i class="fa fa-chevron-right" aria-hidden="true"></i> <b>Agency Partnerships:</b> Are you a car rental
+          agency looking to expand your customer base? Partner with us to showcase your fleet to a broader audience and
+          increase your bookings.</li>
+      </ul>
+    </div>
+
+    <div class="container-fluid four">
+      <div class="container">
+        <h2 class="text-center">HAVE YOU ANY ENQUIRY</h2>
+        <marquee behavior="" direction="left" scrollamount="9" onmouseover="stop()" onmouseout="start()">
+          <p class="text-center">Please feel welcome to contact our staff with any general or medical enquiry. Our
+            doctors
+            will receive or return any urgent calls.</p>
+        </marquee>
+        <div class="row">
+          <div class="col-md-12 button-text">
+            <form>
+              <input type="text" class="form-control" placeholder="Name" required>
+              <br>
+              <input type="text" class="form-control" placeholder="Email" required>
+              <br>
+              <textarea name="" id="" cols="100" rows="10"
+                style="width:100%;  resize: none; box-shadow: 1px 2px 6px black;" class="form-control"
+                placeholder="Write Your Enquiry" required></textarea>
+              <br>
+              <br>
+              <center>
+                <a href="#" style="padding:10px 90px; box-shadow: 1px 2px 6px black; border: 1px solid black;"
+                  onclick="namefuction()">SUBMIT</a>
+              </center>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Link -->
+  <?php include 'footer.php'; ?>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

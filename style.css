@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    margin-bottom: 0px !important;
+    border-radius: 0px;
+    border-bottom: 3px solid black;
+}
+
+.navbar-inverse {
+    background-color: #000 !important;
+}
+
+.myslider {
+    /* border: 2px solid red; */
+    height: auto;
+    width: 100%;
+    margin-top: 51px;
+}
+
+.mysliderimage img {
+    height: 400px !important;
+    object-fit: cover !important;
+    width: 100% !important;
+}
+
+.navbar-nav>li>a:hover {
+    border-bottom: 1px solid white;
+}
+
+p {
+    font-size: 17px !important;
+}
+
+.about-us li {
+    padding-bottom: 20px;
+    font-size: 17px !important;
+    list-style-type: none !important;
+}
+
+.about-us li i {
+    margin-left: -25px;
+    padding-right: 8px;
+    font-weight: 800;
+    color: #9f0000;
+}
+
+.button-text a {
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    font-weight: 800;
+    border: 1px solid gray;
+    padding: 9px 11px;
+    border-radius: 10px;
+    background: linear-gradient(to left, white 50%, black 50%) right;
+    background-size: 200%;
+    transition: .8s ease-out;
+}
+
+.button-text a:hover {
+    /* background-color: black; */
+    color: white;
+    background-position: left;
+}
+
+.two {
+    height: auto;
+    margin: 50px 0px;
+    background-color: #f3f3f3 !important;
+}
+
+.two h2 {
+    margin-bottom: 30px;
+}
+
+.two .container {
+    padding: 25px 0px;
+}
+
+.four {
+    /* border: 1px solid red; */
+    height: auto;
+    width: 100%;
+    background-color: #666666;
+}
+
+.four .container h2 {
+    font-size: 44px;
+    font-weight: 800;
+    color: whitesmoke;
+}
+
+.four .container {
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+.four .container p {
+    color: #000000;
+    font-weight: 600;
+}
+
+.four input {
+    box-shadow: 1px 2px 6px black;
+}
+
+#avaliable {
+    color: #fff;
+    background: linear-gradient(to right, black, red);
+}
+
+#avaliable table,
+th {
+    text-align: center;
+}
+
+
+section {
+    margin: 70px 0px;
+    margin-bottom: 0px;
+}
+
+/* footer */
+.footer {
+    background-color: #161616;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    /* position: fixed; */
+    /* bottom: 0; */
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.table>tbody>tr>td {
+    text-align: center !important;
+}
+
+
+/* MEDIA QUERY START */
+@media only screen and (max-width:767px) {
+    .about-us li i {
+        margin-left: 0px;
+    }
+}
